@@ -39,6 +39,9 @@
     margin-top: 24px;
     background: #F5F5F5;
     border-bottom: 4px solid #800080;
+    transition: 1.5s;
+    transform: translateY(125px);
+    opacity: 0;
 }
 .info > article {
     display: flex;

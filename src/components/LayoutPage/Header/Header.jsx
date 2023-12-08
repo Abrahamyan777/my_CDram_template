@@ -39,13 +39,13 @@ const Header = () => {
                             <nav className={css.navWrapper}>
                                 <ul className={css.list_table}>
                                     <li className={css.list_item}>
-                                        <NavLink to='cget'>cGet</NavLink>
+                                        <NavLink to='/'>cGet</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='csave'>cSave</NavLink>
+                                        <NavLink to='/'>cSave</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='cryptocurrency'>Cryptocurrency</NavLink>
+                                        <NavLink to='/'>Cryptocurrency</NavLink>
                                     </li>
                                 </ul>
                             </nav>

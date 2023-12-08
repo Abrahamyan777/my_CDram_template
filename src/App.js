@@ -13,9 +13,9 @@ function App() {
         <Route path='/' element={<Layout />} >
           <Route index element={<Home />} />
           <Route path='home' element={<Home />} />
-          <Route path='cget' element={<Cget />} />
+          {/* <Route path='cget' element={<Cget />} />
           <Route path='csave' element={<Csave />} />
-          <Route path='cryptocurrency' element={<Cryptocurrency />} />
+          <Route path='cryptocurrency' element={<Cryptocurrency />} /> */}
         </Route>
       </Routes>
     </>

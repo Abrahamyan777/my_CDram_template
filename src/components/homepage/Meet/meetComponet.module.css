@@ -6,30 +6,35 @@
     justify-content: center;
     align-items: center;
 }
+
 .meetContainer {
     width: 100%;
-    padding: 7%  14% 8.5% 14%;
+    padding: 7% 14% 8.5% 14%;
 }
-.meetContainerInner{
+
+.meetContainerInner {
     width: 100%;
 }
+
 .meetHeader {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .meetlogoContainer {
     display: flex;
     justify-content: center;
     gap: 4%;
 }
-.meetlogoContainer > span {
+
+.meetlogoContainer>span {
     font-weight: 400;
     font-size: 60px;
     line-height: 72px;
 }
 
-.meetlogoContainer > div {
+.meetlogoContainer>div {
     width: 196px;
     background-image: url("../../../images/meetLogo.png");
     background-repeat: no-repeat;
@@ -55,14 +60,19 @@
     gap: 8px;
 }
 
-.meetFooter > article {
+
+.meetFooter>article {
     flex-basis: 262px;
     height: 402px;
     border-bottom: 4px solid #800080;
     border-radius: 3px;
     background-color: white;
+    transition: 1.5s;
+    transform: translateY(125px);
+    opacity: 0;
 
 }
+
 
 .footerLogo {
     width: 123px;
@@ -78,7 +88,7 @@
     text-align: center;
 }
 
-.info > h3 {
+.info>h3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
@@ -86,7 +96,7 @@
     margin-bottom: 8px;
 }
 
-.info > p {
+.info>p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -96,8 +106,9 @@
 
 @media screen and (max-width: 1024px) {
     .meetContainer {
-        padding: 5%  12% 6.5% 12%;
+        padding: 5% 12% 6.5% 12%;
     }
+
     .meetText p {
         font-size: 24px;
         line-height: 32px;
@@ -108,6 +119,7 @@
         flex-wrap: wrap;
         gap: 10%;
     }
+
     .meetFooter>article {
         margin-bottom: 5px;
     }
@@ -119,41 +131,47 @@
         line-height: 28px;
     }
 }
+
 @media (max-width: 445px) {
-    .meetlogoContainer > span {
+    .meetlogoContainer>span {
         font-weight: 400;
         font-size: 53px;
         line-height: 60px;
     }
 }
+
 @media (max-width: 380px) {
-    .meetlogoContainer > span {
+    .meetlogoContainer>span {
         font-weight: 400;
         font-size: 45px;
         line-height: 57px;
     }
 }
+
 @media (max-width: 300px) {
-    .meetlogoContainer > span {
+    .meetlogoContainer>span {
         font-weight: 400;
         font-size: 35px;
         line-height: 52px;
     }
-    .info > p {
+
+    .info>p {
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
         padding: 0 20px;
     }
-    
+
 }
+
 @media (max-width: 235px) {
-    .meetlogoContainer > span {
+    .meetlogoContainer>span {
         font-weight: 400;
         font-size: 30px;
         line-height: 48px;
     }
-    .info > p {
+
+    .info>p {
         font-weight: 400;
         font-size: 14px;
         line-height: 14px;

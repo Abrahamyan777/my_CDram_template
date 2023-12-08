@@ -1,15 +1,31 @@
+import { useInView } from 'react-intersection-observer';
 import css from './map.module.css'
+import { useEffect, useRef } from 'react';
+import "./map.css"
 
 const Map = () => {
+
+    const {ref: Rocket, inView: ElisVisible} = useInView({threshold: 0.3})
+
+    console.log(ElisVisible);
+    const myRef = useRef()
+    useEffect(() => {
+        if(ElisVisible){
+            myRef.current.classList.add("animation1")
+        }
+
+    }, [ElisVisible])
+
+
     return (
-        <section className={css.roadmapWrapper}>
+        <section className={css.roadmapWrapper} ref={Rocket}>
             <div className={css.roadmapContainer}>
                 <div className={css.radmapContainerInner}>
                 <div className={css.roadmapHeader}>
                     <div></div>
                     <h4>Roadmap</h4>
                 </div>
-                <div className={css.info}>
+                <div className={css.info} ref={myRef} >
                     <article className={css.article_1 + ' '+ css.full}>
                         <div className={css.leftInfo_1}>
                             <h5 className={css.title}>Launch of cSave and cGet</h5>

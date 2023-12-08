@@ -1,10 +1,25 @@
+import { useInView } from 'react-intersection-observer';
 import css from './meetComponet.module.css'
+import { useEffect, useRef } from 'react';
+import './meet.css'
 
 
-const MeetComponents = () => {
+function MeetComponents() {
+
+    const { ref: MyRocet, inView: ElIsVisible } = useInView({ threshold: 0.4 });
+
+    const myRef = useRef();
+
+    useEffect(() => {
+        if (ElIsVisible) {
+            myRef.current.classList.add("animation");
+        }
+    }, [ElIsVisible]);
+
+
     return (
         <section className={css.meetWrapper}>
-            <div className={css.meetContainer}>
+            <div className={css.meetContainer} ref={MyRocet}>
                 <div className={css.meetContainerInner}>
                     <div className={css.meetHeader}>
                         <div className={css.meetlogoContainer}>
@@ -18,8 +33,8 @@ const MeetComponents = () => {
                             </p>
                         </div>
                     </div>
-                    <div className={css.meetFooter}>
-                        <article>
+                    <div className={css.meetFooter} ref={myRef}>
+                        <article >
                             <div className={css.footerLogo}></div>
                             <div className={css.info}>
                                 <h3>Best options</h3>
@@ -46,7 +61,7 @@ const MeetComponents = () => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default MeetComponents;
