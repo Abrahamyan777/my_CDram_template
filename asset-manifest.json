@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my_cDram/static/css/main.c61bbf48.css",
+    "main.js": "/my_cDram/static/js/main.9fd032b1.js",
+    "static/js/787.69859e86.chunk.js": "/my_cDram/static/js/787.69859e86.chunk.js",
+    "static/media/networkBg.png": "/my_cDram/static/media/networkBg.610d8790aa902bcbbd9a.png",
+    "static/media/Vector1.svg": "/my_cDram/static/media/Vector1.2f6f563c71844db55ef7.svg",
+    "static/media/Vector4.svg": "/my_cDram/static/media/Vector4.785e075c1f8961596438.svg",
+    "static/media/Vector2.svg": "/my_cDram/static/media/Vector2.4d9e9ad31fdbf8f7faa2.svg",
+    "static/media/Vector5.svg": "/my_cDram/static/media/Vector5.c09c5a1a3b4e7c2139d0.svg",
+    "index.html": "/my_cDram/index.html",
+    "static/media/Vector3.svg": "/my_cDram/static/media/Vector3.d2b804d9e78c1fb008f3.svg",
+    "main.c61bbf48.css.map": "/my_cDram/static/css/main.c61bbf48.css.map",
+    "main.9fd032b1.js.map": "/my_cDram/static/js/main.9fd032b1.js.map",
+    "787.69859e86.chunk.js.map": "/my_cDram/static/js/787.69859e86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c61bbf48.css",
+    "static/js/main.9fd032b1.js"
+  ]
+}
